@@ -20,6 +20,7 @@ public class Solicitacao {
     private String quartoDesejado;
     private int quantidadeAdultos;
     private int quantidadeCriancas;
+    private String observacao;
 
     
     
@@ -86,5 +87,15 @@ public class Solicitacao {
     public void setQuantidadeCriancas(int quantidadeCriancas) {
         this.quantidadeCriancas = quantidadeCriancas;
     }
+
+    public String getObservacao() {
+        return observacao;
+    }
+
+    public void setObservacao(String observacao) {
+        this.observacao = observacao;
+    }
+    
+    
     
 }
