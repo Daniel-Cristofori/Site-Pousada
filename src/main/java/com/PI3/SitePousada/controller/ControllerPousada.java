@@ -40,11 +40,11 @@ public class ControllerPousada {
      } 
      
      @PostMapping("/pagina-inicial") 
-     public String recebeCadastro(Model model, @Valid @ModelAttribute("solicitacao") SolicitacaoEntity solicitacao, BindingResult result){ 
+     public String recebeCadastro(@Valid @ModelAttribute("solicitacao") SolicitacaoEntity solicitacao, BindingResult result){ 
                   
         if (result.hasErrors()) { 
 
-            return "inserir"; 
+            return "pagina-inicial"; 
 
         } 
 
@@ -63,7 +63,7 @@ public class ControllerPousada {
 
         } 
      
-        return "pagina-inicial";
+        return "redirect:/";
      
      } 
      
